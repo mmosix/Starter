@@ -1,0 +1,19 @@
+<ion-content>
+<div class="topBG ion-padding">
+  <ion-card class="ion-no-margin" style="margin-top: 50px;">
+    <ion-card-header>
+      <ion-card-subtitle class="hello">Hello there</ion-card-subtitle>
+      <ion-card-title class="login">Login to Your Account!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content style="margin-top: 100px;">
+      <ion-button expand="block" style="border-radius: 8px;" (click)="navigateToLogin()">Login</ion-button>
+    </ion-card-content>
+  </ion-card>
+</div>
+
+<div class="ion-text-center" style="top: 50%; left: 10%; right: 10%; position: absolute;">
+  <p class="question">Don’t Have an Account?</p>
+  <ion-button expand="block" fill="outline" style="border-radius: 8px;" (click)="navigateToType()">Register</ion-button>
+</div>
+
+</ion-content>

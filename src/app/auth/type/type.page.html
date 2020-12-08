@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <!-- <ion-back-button defaultHref="auth"></ion-back-button> -->
+            <ion-back-button defaultHref="auth"></ion-back-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content fullscreen scroll="false" padding='true'>
+    <section class="login-container">
+        <div style="margin:50px;">
+            <h1 style="color: #084777; font-weight: 700;">Account Type</h1>
+
+            <div routerLink='/signup/1' style="margin-top: 80px;">
+                <img src="/assets/img/personal.svg">
+            </div>
+
+            <div routerLink='/signup/2' style="margin-top: 20px;">
+                <img src="/assets/img/business.svg">
+            </div>
+
+            <!-- <div style="margin-top: 50px;"> 
+            <ion-button expand="block" size="large" share="round" color="primary" (click)="loginAction()">Continue</ion-button>
+          </div> -->
+        </div>
+    </section>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="auth"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen scroll="false" padding='true'>
+  <section class="login-container">
+      <div style="margin:50px;">
+        <h1 style="color: #084777; font-weight: 700;">Login</h1>
+        <form style="margin-top: 50px;">
+          <ion-list>
+          <ion-item>
+          <ion-label position="stacked">Email</ion-label>
+          <ion-input autocomplete="off" type="text" name="email" [(ngModel)]="postData.email"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+          <ion-label position="stacked">Password</ion-label>
+          <ion-input autocomplete="off" type="password" name="password" [(ngModel)]="postData.password" #password></ion-input>
+          </ion-item>
+          </ion-list>
+          <div style="margin-top: 50px; margin-left: 20px;"> 
+            <ion-button expand="block" size="large" share="round" color="primary" (click)="loginAction()">Login</ion-button>
+            <p style="font-size: small;">Forgot password? <a routerLink='/forgot'>Reset Here!</a></p>
+          </div>
+          </form>
+        </div>
+  </section>
+  </ion-content>

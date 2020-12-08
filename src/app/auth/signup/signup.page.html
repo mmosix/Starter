@@ -1,0 +1,58 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="type"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content fullscreen scroll="false" padding='true'>
+  <section class="login-container">
+      <div style="margin:50px;">
+        <h1 style="color: #084777; font-weight: 700;">Let’s Get Started</h1>
+        <p style="font-style: normal; font-weight: 500; font-size: 14px; line-height: 17px; letter-spacing: -0.333333px; color: #979797;">Fill the form to create your new account</p>
+        <form style="margin-top: 50px;">
+          <ion-list>
+          <ion-grid class="ion-no-margin">
+          <ion-row class="ion-no-padding">
+            <ion-col size="12">
+              <ion-item>
+              <ion-label position="stacked">Email</ion-label>
+              <ion-input autocomplete="off" name="email" [(ngModel)]="postData.email" type="email"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col class="ion-no-margin" size="6">
+              <ion-item>
+              <ion-label position="stacked">First Name</ion-label>
+              <ion-input autocomplete="off" name="fname" [(ngModel)]="postData.fname" type="text"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col class="ion-no-margin" size="6">
+              <ion-item>
+              <ion-label position="stacked">Last Name</ion-label>
+              <ion-input autocomplete="off" name="lname" [(ngModel)]="postData.lname" type="text"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <ion-item>
+              <ion-label position="stacked">Mobile Number</ion-label>
+              <ion-input autocomplete="off" name="mobile" [(ngModel)]="postData.mobile" type="number"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size="12">
+              <ion-item>
+              <ion-label position="stacked">Password</ion-label>
+              <ion-input autocomplete="off" name="password" [(ngModel)]="postData.password" type="password"></ion-input>
+              </ion-item>
+            </ion-col>
+            </ion-row>
+          </ion-grid>
+
+          </ion-list>
+          <div style="margin-top: 50px; margin-left: 20px;"> 
+            <ion-button expand="block" size="large" share="round" color="primary" (click)="signupAction()">Registration</ion-button>
+            <!-- <p style="font-size: small;">Already have an account? <a routerLink='/login'>Sign in.</a></p> -->
+          </div>
+          </form>
+        </div>
+  </section>
+  </ion-content>
